@@ -34,7 +34,11 @@
   <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
 </table>
 
-
+<ul>
+  <li *ngFor="let item of columnsToDisplay | paginate: { itemsPerPage: 10, currentPage: 0 }"> ... </li>
+</ul>
+           
+<pagination-controls ></pagination-controls>
 <!-- Copyright 2020 Google LLC. All Rights Reserved.
     Use of this source code is governed by an MIT-style license that
     can be found in the LICENSE file at http://angular.io/license -->

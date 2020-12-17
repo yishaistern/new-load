@@ -6,13 +6,15 @@ import { MainComponent } from './main/main.component';
 import { SubComponent } from './sub/sub.component';
 import { SharedModule } from '../shared/shared.module';
 import { TherdComponent } from './therd/therd.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [MainComponent, SubComponent, TherdComponent],
   imports: [
     CommonModule,
     SharedModule,
-    FirstModuleRoutingModule
+    FirstModuleRoutingModule,
+    NgxPaginationModule
   ]
 })
 export class FirstModuleModule { }

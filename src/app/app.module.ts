@@ -28,6 +28,7 @@ import { UserGuardGuard } from './modules/shared/user-guard/user-guard.guard';
     BrowserAnimationsModule,
 
   ],
+  
   providers: [
     UserGuardGuard
   ],
